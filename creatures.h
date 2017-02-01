@@ -7,8 +7,10 @@
 //to give random numbers between 0 and max-1
 #include <stdlib.h>
 
-#define MAXX 380
-#define MAXY 380
+#define MAXX 580
+#define MAXY 580
+#define CLIENTX (MAXX + 20)
+#define CLIENTY (MAXY + 20)
 
 //what states can the tokens be in?
 enum rState
@@ -58,7 +60,7 @@ public:
 
 protected:
     rState myState;				//what condition am I in?
-  int lives;					//how many times can I be hit   
+  int lives;					//how many times can I be hit
 };
 
 //define the Sheep
@@ -122,7 +124,7 @@ public:
 
 private:
   int timeToLive;				//decremented every move:dies if <1
-  int moveDir;					//based on numberpad    
+  int moveDir;					//based on numberpad
   int xmove, ymove;				//how to move-set by SetMoveDir
 };
 

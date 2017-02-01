@@ -6,8 +6,6 @@
 #include "wx/dialog.h"
 #include "rgame.h"				//the game part
 
-#define CLIENTX 400
-#define CLIENTY 400
 #define GAMESPEED 30			//milliseconds per move
 
 //declare a global variable to let us know if the timer loop overruns

@@ -377,7 +377,7 @@ rBullet::MoveMe (int prx, int pry)
 		};
 	  x += xmove;
 	  y += ymove;
-	  if ((x > 400) || (x < 0) || (y > 400) | (y < 0))	//it's moved out of the window
+	  if ((x > CLIENTX) || (x < 0) || (y > CLIENTY) | (y < 0))	//it's moved out of the window
 		{
 		  myState = DEAD;
 		};
