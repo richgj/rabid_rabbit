@@ -34,6 +34,7 @@ public:
   MyTimer *myTimer;
   MyFrame *myFrame;
   wxMemoryDC *myDrawingDC;
+  wxBitmap *myBitmap;
   wxClientDC *myDC;
   Game *myGame;
 private:
@@ -120,13 +121,14 @@ EVT_MOUSE_EVENTS (MyFrame::MyMouseClick) END_EVENT_TABLE ()
   try
   {
 	myDrawingDC = new wxMemoryDC ();
+  myBitmap = new wxBitmap (CLIENTX, CLIENTY);
   }
   catch (void *theError)
   {
 	wxMessageBox (wxT ("Memory Allocation Error"));
 	wxExit ();
   }
-  myDrawingDC->SelectObject (wxBitmap (CLIENTX, CLIENTY));	//create it
+  myDrawingDC->SelectObject (*myBitmap);
   myDrawingDC->SetBackground (*wxBLACK_BRUSH);
   myDrawingDC->SetTextBackground (*wxBLACK);
   myDrawingDC->SetTextForeground (*wxCYAN);
@@ -423,7 +425,7 @@ MyTimer::Notify ()
 MyFrame::MyFrame (const wxString & title, const wxPoint & pos,
 				  const wxSize & size):
 wxFrame ((wxFrame *) NULL, -1, title, pos, size,
-		 ~wxRESIZE_BORDER & (wxTHICK_FRAME | wxSYSTEM_MENU | wxCAPTION))
+		 ~wxRESIZE_BORDER & (wxSYSTEM_MENU | wxCAPTION))
 {
   html = NULL;
   htmlDialog = NULL;
@@ -492,7 +494,7 @@ void
 MyFrame::OnAbout (wxCommandEvent & WXUNUSED (event))
 {
   wxMessageBox (wxT
-				("Rabid Rabbit v1.2\nDate: Aug 2003\nAuthor: Richard Jones\nEmail: rich@ricksoft.co.uk"),
+				("Rabid Rabbit v1.3\nDate: Feb 2017\nAuthor: Richard Jones"),
 				wxT ("Information"), wxOK | wxICON_INFORMATION);
 }
 
