@@ -1,0 +1,8 @@
+/* XPM */
+static char*bullet[]={
+"3 3 2 1",
+". c None",
+"# c #ffffff",
+".##",
+"###",
+"###"};

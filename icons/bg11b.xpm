@@ -1,0 +1,15 @@
+/* XPM */
+static char*bg11b[]={
+"9 9 3 1",
+"# c #ffff00",
+". c None",
+"a c #ff0000",
+"..#####..",
+".#aaaaa#.",
+"#aaa#aaa#",
+"#aaaaaaa#",
+"#a#aa#aa#",
+"#aaaaaaa#",
+"#aaaaaaa#",
+".#aaaaa##",
+"..######."};

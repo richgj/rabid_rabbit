@@ -1,0 +1,22 @@
+/* XPM */
+static char*upbg5[]={
+"16 16 3 1",
+"# c #ffff00",
+". c None",
+"a c #ffffff",
+"....########....",
+"...#........#...",
+"....########....",
+"..aa..aaaa..aa..",
+".aaaa.aaaa.aaaa.",
+".aaaaaaaaaaaaaa.",
+".aaaaaaaaaaaaaa.",
+".aaaaa.aa.aaaaa.",
+".aaaaa.aa.aaaaa.",
+".aaaa..aa..aaaa.",
+".aaa...aa...aaa.",
+"..a...aaaa...a..",
+".....aaaaaa.....",
+"...aaaaaaaaaa...",
+"...aa.aaaa.aa...",
+"................"};
