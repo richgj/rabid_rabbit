@@ -625,7 +625,7 @@ MyApp::DrawPage ()
   myStatus.Printf (wxT ("Lives: %i"), myGame->GetRabbitLives ());
   myFrame->SetStatusText (myStatus, 1);	//second position on bar
 
-  myStatus.Printf (wxT ("Lives: %i"), myGame->GetRabbitSheepInTow ());
+  myStatus.Printf (wxT ("Sheep: %i"), myGame->GetRabbitSheepInTow ());
   myFrame->SetStatusText (myStatus, 2);	//Third position
 }
 
